@@ -1,0 +1,13 @@
+filename,xmin,ymin,xmax,ymax
+"/root/caffe/images/example_1_1.jpeg", 50, 50, 500, 600
+"/root/caffe/images/example_3_1.jpeg", 50, 50, 500, 600
+"/root/caffe/images/example_5_1.jpeg", 50, 50, 500, 600
+"/root/caffe/images/example_7_1.jpg", 50, 50, 500, 600
+"/root/caffe/images/example_8_1.jpg", 50, 50, 500, 600
+"/root/caffe/images/example_9_1.jpg", 50, 50, 500, 600
+"/root/caffe/images/example_11_1.jpg", 50, 50, 500, 600
+"/root/caffe/images/example_12_1.jpg", 50, 50, 500, 600
+"/root/caffe/images/example_14_1.jpg", 50, 50, 500, 600
+"/root/caffe/images/example_16_1.jpg", 50, 50, 500, 600
+"/root/caffe/images/example_17_1.jpg", 50, 50, 500, 600
+

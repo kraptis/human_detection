@@ -1,6 +1,6 @@
-# human detection
 
-# Problem Statement:
+
+#Problem Statement:
 
 Detect the person on images with fashion models, find the best possible bounding box.
 
@@ -28,11 +28,14 @@ models for object detection such as ImageNet.
 #R-CNN (caffe framework)
 
 Step 1: Load Imagenet.
+
 Step 2: Selective Search: Finding possible bounding boxes with objects. “Selective Search for Object
 Recognition”J. R. R. Uijlings, K. E. A. van de Sande, T. Gevers, A. W. M. Smeulders
 2013 IJCV.
+
  Step 3: Detect objects in the proposed areas (with caffe/python/detect.py). Only the bounding boxes
 containing a person are kept.
+
 Step 4: Out of all detected objects, we keep the 4 most confident that the detected object is a person. If
 there is a great difference on the confidence between these 4, the bounding box is created by finding the
 min and max points of each of the 4 detections, otherwise the min of the bounding box is mean of the
@@ -44,8 +47,11 @@ difference between the first and the rest) we only keep that one.
 
 Inside the _temp folder there is a det_input.txt file, in that file you write the path of the image that you
 want to test. If you want to test the whole data set in once(better results according to Selective Search method) just add all the paths here.
+
 The ipython file name is caffe_fashion_human_detection.ipynb. It is the main method.
+
 For downloading the ImageNet: ./scripts/download_model_binary.py models/bvlc_reference_rcnn_ilsvrc13
+
 It also needs the data/ilsvrc12.
 
 Platform: Ubuntu 14.04 with i3 2.5 and 4 GB RAM. Caffe is running only on CPU

@@ -1,17 +1,17 @@
 
 
-#Problem Statement:
+#Problem Statement
 
 Detect the person in images with fashion models, find the best possible bounding box.
 
-#Data:
+#Data
 
 22 images with fashion models.
 Problems:- Not only humans, but also human parts (legs, torso,etc) 
          - Various Scales
 
 
-#Methods:
+#Methods
 
 - Cascade Training, HOGs + SVM one of the basic techniques for human
 detection.
@@ -37,6 +37,7 @@ Imagenet: ImageNet is an image database organized according to the WordNet hiera
 http://www.image-net.org/
 
 Steps:
+
 Step 1: Load Imagenet.
 
 Step 2: Selective Search: Finding possible bounding boxes with objects. “Selective Search for Object
@@ -53,7 +54,7 @@ mins and the max is the mean of the maxs. If the first proposal is very strong (
 difference between the first and the rest) we only keep that one.
 
 
-#Instructions:
+#Instructions
 
 Inside the _temp folder there is a det_input.txt file,write the path of the image that you
 want to test. If you want to test the whole data set at once (better results according to Selective Search method), just add all the paths here.

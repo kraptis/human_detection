@@ -2,21 +2,21 @@
 
 #Problem Statement:
 
-Detect the person on images with fashion models, find the best possible bounding box.
+Detect the person in images with fashion models, find the best possible bounding box.
 
 #Data:
 
 22 images with fashion models.
-Problems- Not only humans but also part of humans such as legs - Various Scales
+Problems- Not only humans, but alsohuman parts such as legs - Various Scales
 
 
 #Methods:
 
 - Cascade Training, HOGs + SVM one of the basic techniques for human
 detection.
-Problems: few images, not the whole person in every image. It is impossible
-to train a good detector neither for humans nor for human parts. There are
-pre-trained models for face, upper body and humans,but they are not
+Problems: few images, occlusions. It is impossible
+to train a good detector for humans nor for human parts. There are
+pre-trained models for face, upper body and humans, but they are not
 applicable to these data.
 
 - Convolutional Neural Networks (cNN) can overcome the problems of the cascade training with HOGs, it is
@@ -45,20 +45,20 @@ difference between the first and the rest) we only keep that one.
 
 #Instructions:
 
-Inside the _temp folder there is a det_input.txt file, in that file you write the path of the image that you
-want to test. If you want to test the whole data set in once(better results according to Selective Search method) just add all the paths here.
+Inside the _temp folder there is a det_input.txt file,write the path of the image that you
+want to test. If you want to test the whole data set at once (better results according to Selective Search method), just add all the paths here.
 
 The ipython file name is caffe_fashion_human_detection.ipynb. It is the main method.
 
-For downloading the ImageNet: ./scripts/download_model_binary.py models/bvlc_reference_rcnn_ilsvrc13
+To download  ImageNet: ./scripts/download_model_binary.py models/bvlc_reference_rcnn_ilsvrc13
 
 It also needs the data/ilsvrc12.
 
 Platform: Ubuntu 14.04 with i3 2.5 and 4 GB RAM. Caffe is running only on CPU
 and not on GPU. Python 2.7 + Jupyter
 
-For the result images see the reults folder. I have uploaded the selective search code in a zip file. It has small changes compared to the original,
-that is why it is preferred to download and run this version. Please copy the detect.py file into the caffe/python/ folder, there also some improvements compared to the
+For the result images see the reults folder. I have uploaded the selective search code in a zip file. It has a few changes  to the original,
+that is why it is preferred to download and run this version. Please copy the detect.py file into the caffe/python/ folder, there also some improvements of the
 original from caffe framework
 
 See https://github.com/BVLC/caffe for more details, installation instructions etc. about the caffe framework.

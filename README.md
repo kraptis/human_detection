@@ -7,7 +7,8 @@ Detect the person in images with fashion models, find the best possible bounding
 #Data:
 
 22 images with fashion models.
-Problems- Not only humans, but alsohuman parts such as legs - Various Scales
+Problems:- Not only humans, but also human parts (legs, torso,etc) 
+         - Various Scales
 
 
 #Methods:
@@ -15,9 +16,9 @@ Problems- Not only humans, but alsohuman parts such as legs - Various Scales
 - Cascade Training, HOGs + SVM one of the basic techniques for human
 detection.
 Problems: few images, occlusions. It is impossible
-to train a good detector for humans nor for human parts. There are
-pre-trained models for face, upper body and humans, but they are not
-applicable to these data.
+to train a good detector for humans or human parts. There are
+pre-trained models that detect humans and/or human parts (face, upper,etc) but they are not
+applicable to these data (big number of false positives).
 
 - Convolutional Neural Networks (cNN) can overcome the problems of the cascade training with HOGs, it is
 suitable for detecting humans as well as human parts. One of the best
@@ -27,6 +28,15 @@ models for object detection such as ImageNet.
 
 #R-CNN (caffe framework)
 
+Caffe framework: Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (BVLC) and by community contributors.
+
+R-CNN is a state-of-the-art visual object detection system that combines bottom-up region proposals with rich features computed by a convolutional neural network.
+See here: https://github.com/rbgirshick/rcnn
+
+Imagenet: ImageNet is an image database organized according to the WordNet hierarchy (currently only the nouns), in which each node of the hierarchy is depicted by hundreds and thousands of images. Currently it has an average of over five hundred images per node.It is a useful resource for researchers, educators, students and all of you who share our passion for pictures. 
+http://www.image-net.org/
+
+Steps:
 Step 1: Load Imagenet.
 
 Step 2: Selective Search: Finding possible bounding boxes with objects. “Selective Search for Object

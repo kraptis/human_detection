@@ -6,7 +6,7 @@ Detect the person in images with fashion models, find the best possible bounding
 
 #Data
 
-22 images with fashion models.
+21 images with fashion models.
 Problems:- Not only humans, but also human parts (legs, torso,etc) 
          - Various Scales
 

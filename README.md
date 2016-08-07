@@ -73,6 +73,12 @@ original from caffe framework
 
 See https://github.com/BVLC/caffe for more details, installation instructions etc. about the caffe framework.
 
+#Training an R-CNN detector on another dataset
+
+It should be easy to train an R-CNN detector using another detection dataset as long as that dataset has complete bounding box annotations (i.e., all instances of all classes are labeled).
+
+To support a new dataset, you define three functions: (1) one that returns a structure that describes the class labels and list of images; (2) one that returns a region of interest (roi) structure that describes the bounding box annotations; and (3) one that provides an test evaluation function.
+
 
 
 
